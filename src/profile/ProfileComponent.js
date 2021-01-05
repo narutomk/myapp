@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import Profile from "./Profile";
 
 function ProfileComponent({ children }) {
-  const [name, setName] = useState("sarsour");
-  const [prof, setProf] = useState("web Dev");
-  const [bio, setBio] = useState("bla blaa");
+  const name = "sarsour";
+  const prof = "web Dev";
+  const bio = "bla blaa";
 
   const handleName = () => {
     alert(name);
