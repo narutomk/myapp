@@ -5,7 +5,7 @@ import ProfileComponent from "./profile/ProfileComponent";
 function App() {
   return (
     <div className="App">
-      <ProfileComponent />
+      <ProfileComponent>logo192.png</ProfileComponent>
     </div>
   );
 }

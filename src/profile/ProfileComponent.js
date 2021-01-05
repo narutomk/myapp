@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Profile from "./Profile";
 
-function ProfileComponent() {
+function ProfileComponent({ children }) {
   const [name, setName] = useState("sarsour");
   const [prof, setProf] = useState("web Dev");
   const [bio, setBio] = useState("bla blaa");
@@ -12,6 +12,7 @@ function ProfileComponent() {
   return (
     <div>
       <Profile name={name} prof={prof} bio={bio} fn={handleName} />
+      <img src={children} alt="test" />
     </div>
   );
 }
